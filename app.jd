@@ -1,0 +1,16 @@
+document.getElementById('swapForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const from = document.getElementById('tokenFrom').value;
+  const to = document.getElementById('tokenTo').value;
+  const amount = document.getElementById('amount').value;
+
+  if(from && to && amount) {
+    document.getElementById('result').textContent = 
+      `Você trocou ${amount} ${from} por ${to}`;
+    document.getElementById('result').style.color = 'green';
+  } else {
+    document.getElementById('result').textContent = 'Preencha todos os campos!';
+    document.getElementById('result').style.color = 'red';
+  }
+});
