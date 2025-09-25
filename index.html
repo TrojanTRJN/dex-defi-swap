@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dex DeFi - Plataforma</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Dex DeFi</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="swap">
+      <h2>Swap de Tokens</h2>
+      <form id="swapForm">
+        <input type="text" placeholder="Token de origem" id="tokenFrom" required>
+        <input type="text" placeholder="Token de destino" id="tokenTo" required>
+        <input type="number" placeholder="Quantidade" id="amount" required>
+        <button type="submit">Trocar</button>
+      </form>
+      <p id="result"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Dex DeFi</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
